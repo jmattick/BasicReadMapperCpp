@@ -1,5 +1,0 @@
-/home/jmattick16/BasicReadMapperCpp/CMakeFiles/rebuild_cache.dir
-/home/jmattick16/BasicReadMapperCpp/CMakeFiles/edit_cache.dir
-/home/jmattick16/BasicReadMapperCpp/SuffixArrayReadMapper/CMakeFiles/rebuild_cache.dir
-/home/jmattick16/BasicReadMapperCpp/SuffixArrayReadMapper/CMakeFiles/SuffixArrayReadMapper.dir
-/home/jmattick16/BasicReadMapperCpp/SuffixArrayReadMapper/CMakeFiles/edit_cache.dir

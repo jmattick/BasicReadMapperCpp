@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/SuffixArrayReadMapper.dir/SuffixArrayReadMapper.cpp.o  -o SuffixArrayReadMapper 
