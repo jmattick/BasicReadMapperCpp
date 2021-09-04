@@ -11,7 +11,7 @@ git clone https://github.com/jmattick/BasicReadMapperCpp.git; cd BasicReadMapper
 ### Run Example
 
 ```
-SuffixArrayReadMapper/SuffixArrayReadMapper ExampleData/reference.fasta ExampleData/reads.fasta out.txt
+src/BasicReadMapper ExampleData/reference.fasta ExampleData/reads.fasta ExampleData/out.txt
 ```
 
 
