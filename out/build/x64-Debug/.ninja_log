@@ -1,13 +1,10 @@
 # ninja log v5
 0	402	6524913889685158	SuffixArrayReadMapper/CMakeFiles/SuffixArrayReadMapper.dir/SuffixArrayReadMapper.cpp.obj	bb913a3f2cfcf304
 402	558	6524913891018130	SuffixArrayReadMapper/SuffixArrayReadMapper.exe	8c5d2315f9401f81
-557	780	6524927983230870	src/BasicReadMapper.exe	9b1e827b8124d6ea
+867	1047	6524940205348183	src/BasicReadMapper.exe	172203ca8d68a438
+6	843	6524939658636789	src/CMakeFiles/BasicReadMapper.dir/SuffixArrayReadMapper/SuffixArrayReadMapper.cpp.obj	d8883c5abd31ce5
 0	354	6524912802229487	SuffixArrayReadMapper/CMakeFiles/SuffixArrayReadMapper.dir/SuffixArray.cpp.obj	8a4cde8983211d8b
 1	481	6524366808612306	SuffixArrayReadMapper/CMakeFiles/SuffixArrayReadMapper.dir/ParseFasta.cpp.obj	d01aeb31da0d9091
-0	647	6524934769422825	src/CMakeFiles/BasicReadMapper.dir/main.cpp.obj	966b543690c43769
 1	780	6524939658012541	src/CMakeFiles/BasicReadMapper.dir/SuffixArrayReadMapper/SuffixArray.cpp.obj	2b81ce483c718bf7
-6	843	6524939658636789	src/CMakeFiles/BasicReadMapper.dir/SuffixArrayReadMapper/SuffixArrayReadMapper.cpp.obj	d8883c5abd31ce5
-11	892	6524939659150182	src/CMakeFiles/BasicReadMapper.dir/SuffixArrayReadMapper/ParseFasta.cpp.obj	3d7e6426a7f40283
-893	1107	6524939660979566	src/BasicReadMapper.exe	172203ca8d68a438
 0	867	6524940203763357	src/CMakeFiles/BasicReadMapper.dir/main.cpp.obj	966b543690c43769
-867	1047	6524940205348183	src/BasicReadMapper.exe	172203ca8d68a438
+11	892	6524939659150182	src/CMakeFiles/BasicReadMapper.dir/SuffixArrayReadMapper/ParseFasta.cpp.obj	3d7e6426a7f40283

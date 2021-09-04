@@ -43,11 +43,7 @@
 					},
 					"parentIndex" : 1,
 					"projectIndex" : 0,
-					"source" : "src/SuffixArrayReadMapper",
-					"targetIndexes" : 
-					[
-						1
-					]
+					"source" : "src/SuffixArrayReadMapper"
 				}
 			],
 			"name" : "Debug",
@@ -63,8 +59,7 @@
 					"name" : "BasicReadMapperCpp",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -75,13 +70,6 @@
 					"id" : "BasicReadMapper::@145eef247bfb46b6828c",
 					"jsonFile" : "target-BasicReadMapper-Debug-603df1e73d85e9d305c9.json",
 					"name" : "BasicReadMapper",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 2,
-					"id" : "SuffixArrayReadMapper::@fa18ca4dec337e805d17",
-					"jsonFile" : "target-SuffixArrayReadMapper-Debug-5884f47227bd0bb66f8f.json",
-					"name" : "SuffixArrayReadMapper",
 					"projectIndex" : 0
 				}
 			]

@@ -147,56 +147,6 @@ build src\rebuild_cache: phony src\CMakeFiles\rebuild_cache.util
 # C:/Users/jmatt/Documents/cpplearning/github/BasicReadMapperCpp/src/CMakeLists.txt
 # =============================================================================
 
-# =============================================================================
-# Object build statements for EXECUTABLE target SuffixArrayReadMapper
-
-
-#############################################
-# Order-only phony target for SuffixArrayReadMapper
-
-build cmake_object_order_depends_target_SuffixArrayReadMapper: phony || src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
-
-build src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\SuffixArrayReadMapper.cpp.obj: CXX_COMPILER__SuffixArrayReadMapper_Debug ..\..\..\src\SuffixArrayReadMapper\SuffixArrayReadMapper.cpp || cmake_object_order_depends_target_SuffixArrayReadMapper
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  OBJECT_DIR = src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
-  OBJECT_FILE_DIR = src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
-  TARGET_COMPILE_PDB = src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\
-  TARGET_PDB = src\SuffixArrayReadMapper\SuffixArrayReadMapper.pdb
-
-build src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\SuffixArray.cpp.obj: CXX_COMPILER__SuffixArrayReadMapper_Debug ..\..\..\src\SuffixArrayReadMapper\SuffixArray.cpp || cmake_object_order_depends_target_SuffixArrayReadMapper
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  OBJECT_DIR = src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
-  OBJECT_FILE_DIR = src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
-  TARGET_COMPILE_PDB = src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\
-  TARGET_PDB = src\SuffixArrayReadMapper\SuffixArrayReadMapper.pdb
-
-build src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\ParseFasta.cpp.obj: CXX_COMPILER__SuffixArrayReadMapper_Debug ..\..\..\src\SuffixArrayReadMapper\ParseFasta.cpp || cmake_object_order_depends_target_SuffixArrayReadMapper
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  OBJECT_DIR = src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
-  OBJECT_FILE_DIR = src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
-  TARGET_COMPILE_PDB = src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\
-  TARGET_PDB = src\SuffixArrayReadMapper\SuffixArrayReadMapper.pdb
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target SuffixArrayReadMapper
-
-
-#############################################
-# Link the executable src\SuffixArrayReadMapper\SuffixArrayReadMapper.exe
-
-build src\SuffixArrayReadMapper\SuffixArrayReadMapper.exe: CXX_EXECUTABLE_LINKER__SuffixArrayReadMapper_Debug src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\SuffixArrayReadMapper.cpp.obj src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\SuffixArray.cpp.obj src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\ParseFasta.cpp.obj
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\
-  TARGET_FILE = src\SuffixArrayReadMapper\SuffixArrayReadMapper.exe
-  TARGET_IMPLIB = src\SuffixArrayReadMapper\SuffixArrayReadMapper.lib
-  TARGET_PDB = src\SuffixArrayReadMapper\SuffixArrayReadMapper.pdb
-
 
 #############################################
 # Utility command for edit_cache
@@ -227,10 +177,6 @@ build BasicReadMapper: phony src\BasicReadMapper.exe
 
 build BasicReadMapper.exe: phony src\BasicReadMapper.exe
 
-build SuffixArrayReadMapper: phony src\SuffixArrayReadMapper\SuffixArrayReadMapper.exe
-
-build SuffixArrayReadMapper.exe: phony src\SuffixArrayReadMapper\SuffixArrayReadMapper.exe
-
 # =============================================================================
 # Folder targets.
 
@@ -253,7 +199,7 @@ build src\all: phony src\BasicReadMapper.exe src\SuffixArrayReadMapper\all
 #############################################
 # Folder: C:/Users/jmatt/Documents/cpplearning/github/BasicReadMapperCpp/out/build/x64-Debug/src/SuffixArrayReadMapper
 
-build src\SuffixArrayReadMapper\all: phony src\SuffixArrayReadMapper\SuffixArrayReadMapper.exe
+build src\SuffixArrayReadMapper\all: phony
 
 # =============================================================================
 # Built-in targets
