@@ -6,4 +6,4 @@ cmake_minimum_required (VERSION 3.8)
 project ("BasicReadMapperCpp")
 
 # Include sub-projects.
-add_subdirectory ("SuffixArrayReadMapper")
+add_subdirectory ("src")

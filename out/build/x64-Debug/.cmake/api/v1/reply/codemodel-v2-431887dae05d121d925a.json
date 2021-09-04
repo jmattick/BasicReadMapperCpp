@@ -18,17 +18,35 @@
 					"source" : "."
 				},
 				{
-					"build" : "SuffixArrayReadMapper",
+					"build" : "src",
+					"childIndexes" : 
+					[
+						2
+					],
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.8"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
-					"source" : "SuffixArrayReadMapper",
+					"source" : "src",
 					"targetIndexes" : 
 					[
 						0
+					]
+				},
+				{
+					"build" : "src/SuffixArrayReadMapper",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/SuffixArrayReadMapper",
+					"targetIndexes" : 
+					[
+						1
 					]
 				}
 			],
@@ -39,12 +57,14 @@
 					"directoryIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					],
 					"name" : "BasicReadMapperCpp",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -52,8 +72,15 @@
 			[
 				{
 					"directoryIndex" : 1,
-					"id" : "SuffixArrayReadMapper::@11322af4eafa3e063555",
-					"jsonFile" : "target-SuffixArrayReadMapper-Debug-d330bc419e382479d2b5.json",
+					"id" : "BasicReadMapper::@145eef247bfb46b6828c",
+					"jsonFile" : "target-BasicReadMapper-Debug-603df1e73d85e9d305c9.json",
+					"name" : "BasicReadMapper",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "SuffixArrayReadMapper::@fa18ca4dec337e805d17",
+					"jsonFile" : "target-SuffixArrayReadMapper-Debug-5884f47227bd0bb66f8f.json",
 					"name" : "SuffixArrayReadMapper",
 					"projectIndex" : 0
 				}

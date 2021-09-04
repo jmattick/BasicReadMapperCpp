@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "SuffixArrayReadMapper/SuffixArrayReadMapper.exe"
+			"path" : "src/SuffixArrayReadMapper/SuffixArrayReadMapper.exe"
 		},
 		{
-			"path" : "SuffixArrayReadMapper/SuffixArrayReadMapper.pdb"
+			"path" : "src/SuffixArrayReadMapper/SuffixArrayReadMapper.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -17,7 +17,7 @@
 		],
 		"files" : 
 		[
-			"SuffixArrayReadMapper/CMakeLists.txt"
+			"src/SuffixArrayReadMapper/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -50,7 +50,7 @@
 			]
 		}
 	],
-	"id" : "SuffixArrayReadMapper::@11322af4eafa3e063555",
+	"id" : "SuffixArrayReadMapper::@fa18ca4dec337e805d17",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -74,8 +74,8 @@
 	"nameOnDisk" : "SuffixArrayReadMapper.exe",
 	"paths" : 
 	{
-		"build" : "SuffixArrayReadMapper",
-		"source" : "SuffixArrayReadMapper"
+		"build" : "src/SuffixArrayReadMapper",
+		"source" : "src/SuffixArrayReadMapper"
 	},
 	"sourceGroups" : 
 	[
@@ -103,34 +103,34 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "SuffixArrayReadMapper/SuffixArrayReadMapper.cpp",
+			"path" : "src/SuffixArrayReadMapper/SuffixArrayReadMapper.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "SuffixArrayReadMapper/SuffixArrayReadMapper.h",
+			"path" : "src/SuffixArrayReadMapper/SuffixArrayReadMapper.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "SuffixArrayReadMapper/SuffixArray.h",
+			"path" : "src/SuffixArrayReadMapper/SuffixArray.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "SuffixArrayReadMapper/SuffixArray.cpp",
+			"path" : "src/SuffixArrayReadMapper/SuffixArray.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "SuffixArrayReadMapper/ParseFasta.h",
+			"path" : "src/SuffixArrayReadMapper/ParseFasta.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "SuffixArrayReadMapper/ParseFasta.cpp",
+			"path" : "src/SuffixArrayReadMapper/ParseFasta.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

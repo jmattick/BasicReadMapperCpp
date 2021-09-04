@@ -1,5 +1,8 @@
 C:/Users/jmatt/Documents/cpplearning/github/BasicReadMapperCpp/out/build/x64-Debug/CMakeFiles/edit_cache.dir
 C:/Users/jmatt/Documents/cpplearning/github/BasicReadMapperCpp/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
-C:/Users/jmatt/Documents/cpplearning/github/BasicReadMapperCpp/out/build/x64-Debug/SuffixArrayReadMapper/CMakeFiles/SuffixArrayReadMapper.dir
-C:/Users/jmatt/Documents/cpplearning/github/BasicReadMapperCpp/out/build/x64-Debug/SuffixArrayReadMapper/CMakeFiles/edit_cache.dir
-C:/Users/jmatt/Documents/cpplearning/github/BasicReadMapperCpp/out/build/x64-Debug/SuffixArrayReadMapper/CMakeFiles/rebuild_cache.dir
+C:/Users/jmatt/Documents/cpplearning/github/BasicReadMapperCpp/out/build/x64-Debug/src/CMakeFiles/edit_cache.dir
+C:/Users/jmatt/Documents/cpplearning/github/BasicReadMapperCpp/out/build/x64-Debug/src/CMakeFiles/BasicReadMapper.dir
+C:/Users/jmatt/Documents/cpplearning/github/BasicReadMapperCpp/out/build/x64-Debug/src/CMakeFiles/rebuild_cache.dir
+C:/Users/jmatt/Documents/cpplearning/github/BasicReadMapperCpp/out/build/x64-Debug/src/SuffixArrayReadMapper/CMakeFiles/SuffixArrayReadMapper.dir
+C:/Users/jmatt/Documents/cpplearning/github/BasicReadMapperCpp/out/build/x64-Debug/src/SuffixArrayReadMapper/CMakeFiles/edit_cache.dir
+C:/Users/jmatt/Documents/cpplearning/github/BasicReadMapperCpp/out/build/x64-Debug/src/SuffixArrayReadMapper/CMakeFiles/rebuild_cache.dir

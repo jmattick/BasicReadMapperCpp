@@ -126,7 +126,10 @@
 			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeCommonLanguageInclude.cmake"
 		},
 		{
-			"path" : "SuffixArrayReadMapper/CMakeLists.txt"
+			"path" : "src/CMakeLists.txt"
+		},
+		{
+			"path" : "src/SuffixArrayReadMapper/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

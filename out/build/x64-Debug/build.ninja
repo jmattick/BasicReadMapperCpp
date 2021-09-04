@@ -62,6 +62,91 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 # C:/Users/jmatt/Documents/cpplearning/github/BasicReadMapperCpp/CMakeLists.txt
 # =============================================================================
 
+
+#############################################
+# Utility command for edit_cache
+
+build src\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\jmatt\Documents\cpplearning\github\BasicReadMapperCpp\out\build\x64-Debug\src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src\edit_cache: phony src\CMakeFiles\edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target BasicReadMapper
+
+
+#############################################
+# Order-only phony target for BasicReadMapper
+
+build cmake_object_order_depends_target_BasicReadMapper: phony || src\CMakeFiles\BasicReadMapper.dir
+
+build src\CMakeFiles\BasicReadMapper.dir\main.cpp.obj: CXX_COMPILER__BasicReadMapper_Debug ..\..\..\src\main.cpp || cmake_object_order_depends_target_BasicReadMapper
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = src\CMakeFiles\BasicReadMapper.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\BasicReadMapper.dir
+  TARGET_COMPILE_PDB = src\CMakeFiles\BasicReadMapper.dir\
+  TARGET_PDB = src\BasicReadMapper.pdb
+
+build src\CMakeFiles\BasicReadMapper.dir\SuffixArrayReadMapper\SuffixArrayReadMapper.cpp.obj: CXX_COMPILER__BasicReadMapper_Debug ..\..\..\src\SuffixArrayReadMapper\SuffixArrayReadMapper.cpp || cmake_object_order_depends_target_BasicReadMapper
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = src\CMakeFiles\BasicReadMapper.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\BasicReadMapper.dir\SuffixArrayReadMapper
+  TARGET_COMPILE_PDB = src\CMakeFiles\BasicReadMapper.dir\
+  TARGET_PDB = src\BasicReadMapper.pdb
+
+build src\CMakeFiles\BasicReadMapper.dir\SuffixArrayReadMapper\SuffixArray.cpp.obj: CXX_COMPILER__BasicReadMapper_Debug ..\..\..\src\SuffixArrayReadMapper\SuffixArray.cpp || cmake_object_order_depends_target_BasicReadMapper
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = src\CMakeFiles\BasicReadMapper.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\BasicReadMapper.dir\SuffixArrayReadMapper
+  TARGET_COMPILE_PDB = src\CMakeFiles\BasicReadMapper.dir\
+  TARGET_PDB = src\BasicReadMapper.pdb
+
+build src\CMakeFiles\BasicReadMapper.dir\SuffixArrayReadMapper\ParseFasta.cpp.obj: CXX_COMPILER__BasicReadMapper_Debug ..\..\..\src\SuffixArrayReadMapper\ParseFasta.cpp || cmake_object_order_depends_target_BasicReadMapper
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = src\CMakeFiles\BasicReadMapper.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\BasicReadMapper.dir\SuffixArrayReadMapper
+  TARGET_COMPILE_PDB = src\CMakeFiles\BasicReadMapper.dir\
+  TARGET_PDB = src\BasicReadMapper.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target BasicReadMapper
+
+
+#############################################
+# Link the executable src\BasicReadMapper.exe
+
+build src\BasicReadMapper.exe: CXX_EXECUTABLE_LINKER__BasicReadMapper_Debug src\CMakeFiles\BasicReadMapper.dir\main.cpp.obj src\CMakeFiles\BasicReadMapper.dir\SuffixArrayReadMapper\SuffixArrayReadMapper.cpp.obj src\CMakeFiles\BasicReadMapper.dir\SuffixArrayReadMapper\SuffixArray.cpp.obj src\CMakeFiles\BasicReadMapper.dir\SuffixArrayReadMapper\ParseFasta.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = src\CMakeFiles\BasicReadMapper.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = src\CMakeFiles\BasicReadMapper.dir\
+  TARGET_FILE = src\BasicReadMapper.exe
+  TARGET_IMPLIB = src\BasicReadMapper.lib
+  TARGET_PDB = src\BasicReadMapper.pdb
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\jmatt\Documents\cpplearning\github\BasicReadMapperCpp\out\build\x64-Debug\src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\jmatt\Documents\cpplearning\github\BasicReadMapperCpp -BC:\Users\jmatt\Documents\cpplearning\github\BasicReadMapperCpp\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src\rebuild_cache: phony src\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/jmatt/Documents/cpplearning/github/BasicReadMapperCpp/src/CMakeLists.txt
+# =============================================================================
+
 # =============================================================================
 # Object build statements for EXECUTABLE target SuffixArrayReadMapper
 
@@ -69,28 +154,28 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 #############################################
 # Order-only phony target for SuffixArrayReadMapper
 
-build cmake_object_order_depends_target_SuffixArrayReadMapper: phony || SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
+build cmake_object_order_depends_target_SuffixArrayReadMapper: phony || src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
 
-build SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\SuffixArrayReadMapper.cpp.obj: CXX_COMPILER__SuffixArrayReadMapper_Debug ..\..\..\SuffixArrayReadMapper\SuffixArrayReadMapper.cpp || cmake_object_order_depends_target_SuffixArrayReadMapper
+build src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\SuffixArrayReadMapper.cpp.obj: CXX_COMPILER__SuffixArrayReadMapper_Debug ..\..\..\src\SuffixArrayReadMapper\SuffixArrayReadMapper.cpp || cmake_object_order_depends_target_SuffixArrayReadMapper
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  OBJECT_DIR = SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
-  OBJECT_FILE_DIR = SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
-  TARGET_COMPILE_PDB = SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\
-  TARGET_PDB = SuffixArrayReadMapper\SuffixArrayReadMapper.pdb
+  OBJECT_DIR = src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
+  OBJECT_FILE_DIR = src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
+  TARGET_COMPILE_PDB = src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\
+  TARGET_PDB = src\SuffixArrayReadMapper\SuffixArrayReadMapper.pdb
 
-build SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\SuffixArray.cpp.obj: CXX_COMPILER__SuffixArrayReadMapper_Debug ..\..\..\SuffixArrayReadMapper\SuffixArray.cpp || cmake_object_order_depends_target_SuffixArrayReadMapper
+build src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\SuffixArray.cpp.obj: CXX_COMPILER__SuffixArrayReadMapper_Debug ..\..\..\src\SuffixArrayReadMapper\SuffixArray.cpp || cmake_object_order_depends_target_SuffixArrayReadMapper
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  OBJECT_DIR = SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
-  OBJECT_FILE_DIR = SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
-  TARGET_COMPILE_PDB = SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\
-  TARGET_PDB = SuffixArrayReadMapper\SuffixArrayReadMapper.pdb
+  OBJECT_DIR = src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
+  OBJECT_FILE_DIR = src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
+  TARGET_COMPILE_PDB = src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\
+  TARGET_PDB = src\SuffixArrayReadMapper\SuffixArrayReadMapper.pdb
 
-build SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\ParseFasta.cpp.obj: CXX_COMPILER__SuffixArrayReadMapper_Debug ..\..\..\SuffixArrayReadMapper\ParseFasta.cpp || cmake_object_order_depends_target_SuffixArrayReadMapper
+build src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\ParseFasta.cpp.obj: CXX_COMPILER__SuffixArrayReadMapper_Debug ..\..\..\src\SuffixArrayReadMapper\ParseFasta.cpp || cmake_object_order_depends_target_SuffixArrayReadMapper
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  OBJECT_DIR = SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
-  OBJECT_FILE_DIR = SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
-  TARGET_COMPILE_PDB = SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\
-  TARGET_PDB = SuffixArrayReadMapper\SuffixArrayReadMapper.pdb
+  OBJECT_DIR = src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
+  OBJECT_FILE_DIR = src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
+  TARGET_COMPILE_PDB = src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\
+  TARGET_PDB = src\SuffixArrayReadMapper\SuffixArrayReadMapper.pdb
 
 
 # =============================================================================
@@ -98,49 +183,53 @@ build SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\ParseFasta.cpp.
 
 
 #############################################
-# Link the executable SuffixArrayReadMapper\SuffixArrayReadMapper.exe
+# Link the executable src\SuffixArrayReadMapper\SuffixArrayReadMapper.exe
 
-build SuffixArrayReadMapper\SuffixArrayReadMapper.exe: CXX_EXECUTABLE_LINKER__SuffixArrayReadMapper_Debug SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\SuffixArrayReadMapper.cpp.obj SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\SuffixArray.cpp.obj SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\ParseFasta.cpp.obj
+build src\SuffixArrayReadMapper\SuffixArrayReadMapper.exe: CXX_EXECUTABLE_LINKER__SuffixArrayReadMapper_Debug src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\SuffixArrayReadMapper.cpp.obj src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\SuffixArray.cpp.obj src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\ParseFasta.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
+  OBJECT_DIR = src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\
-  TARGET_FILE = SuffixArrayReadMapper\SuffixArrayReadMapper.exe
-  TARGET_IMPLIB = SuffixArrayReadMapper\SuffixArrayReadMapper.lib
-  TARGET_PDB = SuffixArrayReadMapper\SuffixArrayReadMapper.pdb
+  TARGET_COMPILE_PDB = src\SuffixArrayReadMapper\CMakeFiles\SuffixArrayReadMapper.dir\
+  TARGET_FILE = src\SuffixArrayReadMapper\SuffixArrayReadMapper.exe
+  TARGET_IMPLIB = src\SuffixArrayReadMapper\SuffixArrayReadMapper.lib
+  TARGET_PDB = src\SuffixArrayReadMapper\SuffixArrayReadMapper.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
-build SuffixArrayReadMapper\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\jmatt\Documents\cpplearning\github\BasicReadMapperCpp\out\build\x64-Debug\SuffixArrayReadMapper && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build src\SuffixArrayReadMapper\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\jmatt\Documents\cpplearning\github\BasicReadMapperCpp\out\build\x64-Debug\src\SuffixArrayReadMapper && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build SuffixArrayReadMapper\edit_cache: phony SuffixArrayReadMapper\CMakeFiles\edit_cache.util
+build src\SuffixArrayReadMapper\edit_cache: phony src\SuffixArrayReadMapper\CMakeFiles\edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build SuffixArrayReadMapper\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\jmatt\Documents\cpplearning\github\BasicReadMapperCpp\out\build\x64-Debug\SuffixArrayReadMapper && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\jmatt\Documents\cpplearning\github\BasicReadMapperCpp -BC:\Users\jmatt\Documents\cpplearning\github\BasicReadMapperCpp\out\build\x64-Debug"
+build src\SuffixArrayReadMapper\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\jmatt\Documents\cpplearning\github\BasicReadMapperCpp\out\build\x64-Debug\src\SuffixArrayReadMapper && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\jmatt\Documents\cpplearning\github\BasicReadMapperCpp -BC:\Users\jmatt\Documents\cpplearning\github\BasicReadMapperCpp\out\build\x64-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build SuffixArrayReadMapper\rebuild_cache: phony SuffixArrayReadMapper\CMakeFiles\rebuild_cache.util
+build src\SuffixArrayReadMapper\rebuild_cache: phony src\SuffixArrayReadMapper\CMakeFiles\rebuild_cache.util
 
 # =============================================================================
 # Target aliases.
 
-build SuffixArrayReadMapper: phony SuffixArrayReadMapper\SuffixArrayReadMapper.exe
+build BasicReadMapper: phony src\BasicReadMapper.exe
 
-build SuffixArrayReadMapper.exe: phony SuffixArrayReadMapper\SuffixArrayReadMapper.exe
+build BasicReadMapper.exe: phony src\BasicReadMapper.exe
+
+build SuffixArrayReadMapper: phony src\SuffixArrayReadMapper\SuffixArrayReadMapper.exe
+
+build SuffixArrayReadMapper.exe: phony src\SuffixArrayReadMapper\SuffixArrayReadMapper.exe
 
 # =============================================================================
 # Folder targets.
@@ -150,14 +239,21 @@ build SuffixArrayReadMapper.exe: phony SuffixArrayReadMapper\SuffixArrayReadMapp
 #############################################
 # Folder: C:/Users/jmatt/Documents/cpplearning/github/BasicReadMapperCpp/out/build/x64-Debug
 
-build all: phony SuffixArrayReadMapper\all
+build all: phony src\all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/jmatt/Documents/cpplearning/github/BasicReadMapperCpp/out/build/x64-Debug/SuffixArrayReadMapper
+# Folder: C:/Users/jmatt/Documents/cpplearning/github/BasicReadMapperCpp/out/build/x64-Debug/src
 
-build SuffixArrayReadMapper\all: phony SuffixArrayReadMapper\SuffixArrayReadMapper.exe
+build src\all: phony src\BasicReadMapper.exe src\SuffixArrayReadMapper\all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/jmatt/Documents/cpplearning/github/BasicReadMapperCpp/out/build/x64-Debug/src/SuffixArrayReadMapper
+
+build src\SuffixArrayReadMapper\all: phony src\SuffixArrayReadMapper\SuffixArrayReadMapper.exe
 
 # =============================================================================
 # Built-in targets
@@ -166,14 +262,14 @@ build SuffixArrayReadMapper\all: phony SuffixArrayReadMapper\SuffixArrayReadMapp
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\SuffixArrayReadMapper\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.20.21032501-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\src\CMakeLists.txt ..\..\..\src\SuffixArrayReadMapper\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.20.21032501-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ..\..\..\CMakeLists.txt ..\..\..\SuffixArrayReadMapper\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.20.21032501-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeSystem.cmake: phony
+build ..\..\..\CMakeLists.txt ..\..\..\src\CMakeLists.txt ..\..\..\src\SuffixArrayReadMapper\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.20.21032501-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeSystem.cmake: phony
 
 
 #############################################
