@@ -22,24 +22,31 @@ int main(int argc, char* argv[])
 	std::string outPath = argv[3];
 	
 
-	std::cout << "Hello From Suffix Array Read Mapper!\n" << std::endl;
+	std::cout << "Hello From Suffix Array Read Mapper!" << std::endl;
 	
-	std::cout << "Reference File Path: " << refPath << std::endl;
-	std::cout << "Read File Path: " << readPath << std::endl;
-	std::cout << "Output Path: " << outPath << std::endl;
-
 	//parse fasta files
 	std::vector<Fasta> refFastas;
 	ParseFasta(&refFastas, refPath);
 	Fasta refFasta = refFastas.at(0); // only want first sequence 
-
-	std::cout << "\nReference Sequence: \n>";
+	
+	std::cout << "\nReference file path: " << refPath << std::endl;
+	std::cout << "Reference sequence: \n>";
 	std::cout << refFasta.getName() << std::endl;
 	std::cout << refFasta.getSeq() << std::endl;
+	std::cout << "Reference sequence length : " << refFasta.getSeq().length() << std::endl;
+
+	std::vector<Fasta> readFastas;
+	ParseFasta(&readFastas, readPath);
+
+	std::cout << "\nRead File Path: " << readPath << std::endl;
+	std::cout << "Number of reads in " << readPath << ": " 
+		<< readFastas.size() << std::endl;
 
 	//suffix array code
-	std::cout << TestSuffixArrayFunction(refPath) << std::endl;
+	std::cout << "\n" << TestSuffixArrayFunction(refPath) << std::endl;
 
+	//output
+	std::cout << "\nOutput Path: " << outPath << std::endl;
 	
 	
 
