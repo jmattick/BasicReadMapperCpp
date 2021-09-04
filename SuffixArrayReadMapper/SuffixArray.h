@@ -1,4 +1,6 @@
 #pragma once
 #include <string>
+#include <vector>
+#include <iostream>
 
-const char* TestSuffixArrayFunction(std::string refPath);
+int * GenerateSuffixArray(std::string seq, std::size_t n);

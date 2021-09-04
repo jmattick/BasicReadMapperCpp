@@ -43,7 +43,18 @@ int main(int argc, char* argv[])
 		<< readFastas.size() << std::endl;
 
 	//suffix array code
-	std::cout << "\n" << TestSuffixArrayFunction(refPath) << std::endl;
+	std::string refSeq = refFasta.getSeq();
+	const std::size_t refSize= refSeq.size();
+	std::cout << refSize << std::endl;
+
+	int* suffixArray;
+	suffixArray = GenerateSuffixArray(refSeq, refSize);
+
+	//print out suffixArray
+	for (int i = 0; i < refSize; i++)
+	{
+		std::cout << *(suffixArray + i) << " ";
+	}
 
 	//output
 	std::cout << "\nOutput Path: " << outPath << std::endl;
