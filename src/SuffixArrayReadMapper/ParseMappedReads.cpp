@@ -7,6 +7,12 @@ void ParseMappedReadsOut(std::string refSeq, MappedRead* mappedReads, std::size_
 	{
 		MappedRead read = mappedReads[i];
 		std::size_t start = read.getLoc();
+
+		//if read not mapped skip
+		if (start > refSeq.size())
+		{
+			continue;
+		}
 		std::size_t end = start + read.getFasta().getSeq().size();
 		for (std::size_t i = 0; i < start; i++) {
 			outTxt += "-";
