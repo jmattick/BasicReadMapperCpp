@@ -3,4 +3,4 @@
 #include <vector>
 #include <iostream>
 
-int * GenerateSuffixArray(std::string seq, std::size_t n);
+std::size_t * GenerateSuffixArray(std::string seq, std::size_t n);
