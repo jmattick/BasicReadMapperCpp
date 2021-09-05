@@ -10,6 +10,7 @@ private:
 	std::string name;
 	std::string seq;
 public:
+	Fasta();
 	Fasta(std::string n, std::string s);
 	void setName(std::string n);
 	void setSeq(std::string s);

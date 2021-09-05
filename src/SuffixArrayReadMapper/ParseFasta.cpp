@@ -1,6 +1,9 @@
 #include "ParseFasta.h"
 
 //Fasta class
+Fasta::Fasta() {
+
+}
 Fasta::Fasta(std::string n, std::string s)
 {
 	setName(n);
