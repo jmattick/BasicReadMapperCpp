@@ -8,6 +8,9 @@
 
 #include <string>
 #include <vector>
+#include <array>
+#include <iterator>
+#include "ParseMappedReads.h"
 
 int SuffixArrayMapWorkflow(int argc, char* argv[])
 {
@@ -31,17 +34,17 @@ int SuffixArrayMapWorkflow(int argc, char* argv[])
 	Fasta refFasta = refFastas.at(0); // only want first sequence 
 	
 	std::cout << "Reference.fasta file path: " << refPath << std::endl;
-	std::cout << "Reference fasta: \n>";
+	/*std::cout << "Reference fasta: \n>";
 	std::cout << refFasta.getName() << std::endl;
 	std::cout << refFasta.getSeq() << std::endl;
-	std::cout << "Reference sequence length : " << refFasta.getSeq().length() << std::endl;
+	std::cout << "Reference sequence length : " << refFasta.getSeq().length() << std::endl;*/
 
 	std::vector<Fasta> readFastas;
 	ParseFasta(&readFastas, readPath);
 
 	std::cout << "Reads.fasta File Path: " << readPath << std::endl;
-	std::cout << "Number of reads in " << readPath << ": " 
-		<< readFastas.size() << std::endl;
+	/*std::cout << "Number of reads in " << readPath << ": " 
+		<< readFastas.size() << std::endl;*/
 
 	//suffix array code
 	std::string refSeq = refFasta.getSeq();
@@ -50,11 +53,11 @@ int SuffixArrayMapWorkflow(int argc, char* argv[])
 	std::size_t* suffixArray;
 	suffixArray = GenerateSuffixArray(refSeq, refSize);
 
-	//print out suffixArray
-	for (std::size_t i = 0; i < refSize; i++)
-	{
-		std::cout << suffixArray[i] << " ";
-	}
+	////print out suffixArray
+	//for (std::size_t i = 0; i < refSize; i++)
+	//{
+	//	std::cout << suffixArray[i] << " ";
+	//}
 	
 	//std::cout << "\nOrdered Suffixes (first 20 char): \n";
 	////print out suffixes
@@ -68,8 +71,8 @@ int SuffixArrayMapWorkflow(int argc, char* argv[])
 	
 
 	//output
-	std::cout << "\nOutput Path: " << outPath << std::endl;
-	
+	ParseMappedReadsOut(refSeq, mappedReads, readFastas.size(), outPath);
+	std::cout << "\nOutput file: " << outPath << std::endl;
 	
 
 

@@ -48,7 +48,8 @@
 				2,
 				5,
 				7,
-				9
+				9,
+				11
 			]
 		}
 	],
@@ -89,7 +90,8 @@
 				2,
 				5,
 				7,
-				9
+				9,
+				11
 			]
 		},
 		{
@@ -100,7 +102,8 @@
 				3,
 				4,
 				6,
-				8
+				8,
+				10
 			]
 		}
 	],
@@ -159,6 +162,17 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/SuffixArrayReadMapper/SuffixArraySearch.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/SuffixArrayReadMapper/ParseMappedReads.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/SuffixArrayReadMapper/ParseMappedReads.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
