@@ -4,6 +4,7 @@
 #include "ParseFasta.h"
 #include "SuffixArrayReadMapper.h"
 #include "SuffixArray.h"
+#include "SuffixArraySearch.h"
 
 #include <string>
 #include <vector>
@@ -45,17 +46,26 @@ int SuffixArrayMapWorkflow(int argc, char* argv[])
 	//suffix array code
 	std::string refSeq = refFasta.getSeq();
 	const std::size_t refSize= refSeq.size();
-	std::cout << refSize << std::endl;
 
 	std::size_t* suffixArray;
 	suffixArray = GenerateSuffixArray(refSeq, refSize);
 
 	//print out suffixArray
-	for (int i = 0; i < refSize; i++)
+	for (std::size_t i = 0; i < refSize; i++)
 	{
-		//std::cout << *(suffixArray + i) << " ";
 		std::cout << suffixArray[i] << " ";
 	}
+	
+	//std::cout << "\nOrdered Suffixes (first 20 char): \n";
+	////print out suffixes
+	//for (std::size_t i = 0; i < refSize; i++)
+	//{
+	//	std::cout << refSeq.substr(suffixArray[i], refSize).substr(0,20) << "\n";
+	//}
+
+	//std::vector<Fasta> reads, std::size_t* suffixArray, std::string refSeq, std::size_t n
+	MappedRead *mappedReads = SearchSuffixArray(readFastas, suffixArray, refSeq, refSize);
+	
 
 	//output
 	std::cout << "\nOutput Path: " << outPath << std::endl;

@@ -110,6 +110,13 @@ build src\CMakeFiles\BasicReadMapper.dir\SuffixArrayReadMapper\ParseFasta.cpp.ob
   TARGET_COMPILE_PDB = src\CMakeFiles\BasicReadMapper.dir\
   TARGET_PDB = src\BasicReadMapper.pdb
 
+build src\CMakeFiles\BasicReadMapper.dir\SuffixArrayReadMapper\SuffixArraySearch.cpp.obj: CXX_COMPILER__BasicReadMapper_Debug ..\..\..\src\SuffixArrayReadMapper\SuffixArraySearch.cpp || cmake_object_order_depends_target_BasicReadMapper
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = src\CMakeFiles\BasicReadMapper.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\BasicReadMapper.dir\SuffixArrayReadMapper
+  TARGET_COMPILE_PDB = src\CMakeFiles\BasicReadMapper.dir\
+  TARGET_PDB = src\BasicReadMapper.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target BasicReadMapper
@@ -118,7 +125,7 @@ build src\CMakeFiles\BasicReadMapper.dir\SuffixArrayReadMapper\ParseFasta.cpp.ob
 #############################################
 # Link the executable src\BasicReadMapper.exe
 
-build src\BasicReadMapper.exe: CXX_EXECUTABLE_LINKER__BasicReadMapper_Debug src\CMakeFiles\BasicReadMapper.dir\main.cpp.obj src\CMakeFiles\BasicReadMapper.dir\SuffixArrayReadMapper\SuffixArrayReadMapper.cpp.obj src\CMakeFiles\BasicReadMapper.dir\SuffixArrayReadMapper\SuffixArray.cpp.obj src\CMakeFiles\BasicReadMapper.dir\SuffixArrayReadMapper\ParseFasta.cpp.obj
+build src\BasicReadMapper.exe: CXX_EXECUTABLE_LINKER__BasicReadMapper_Debug src\CMakeFiles\BasicReadMapper.dir\main.cpp.obj src\CMakeFiles\BasicReadMapper.dir\SuffixArrayReadMapper\SuffixArrayReadMapper.cpp.obj src\CMakeFiles\BasicReadMapper.dir\SuffixArrayReadMapper\SuffixArray.cpp.obj src\CMakeFiles\BasicReadMapper.dir\SuffixArrayReadMapper\ParseFasta.cpp.obj src\CMakeFiles\BasicReadMapper.dir\SuffixArrayReadMapper\SuffixArraySearch.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
