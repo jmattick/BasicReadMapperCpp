@@ -37,7 +37,7 @@ std::size_t * GenerateSuffixArray(std::string seq, std::size_t n)
 	std::size_t* ind = new std::size_t[n]; 
 	
 	
-	for (std::size_t i = 4; i < 2 * n; i = i * 2)
+	for (std::size_t i = 4; i < 2*n; i= i*2)
 	{
 		//assign rank and index for first suffix
 		int rank = 0;
@@ -50,7 +50,7 @@ std::size_t * GenerateSuffixArray(std::string seq, std::size_t n)
 		{
 			//if first rank and next rank are the same as previous suffix in array
 			if (suffixes[j].rank[0] == prev_rank && 
-				suffixes[j].rank[1] == prev_rank)
+				suffixes[j].rank[1] == suffixes[j-1].rank[1])
 			{
 				//assign the same new rank to suffix
 				prev_rank = suffixes[j].rank[0];
@@ -65,10 +65,11 @@ std::size_t * GenerateSuffixArray(std::string seq, std::size_t n)
 		}
 
 		//asign next rank to suffixes
-		for (std::size_t k = 0; k < n; k++)
+		for (std::size_t j = 0; j < n; j++)
 		{
-			std::size_t nextInd = suffixes[k].index + i/2;
-			suffixes[k].rank[1] = (nextInd < n)? suffixes[ind[nextInd]].rank[0]: -1;
+			std::size_t modifier = (i % 2 == 0) ? i / 2 : (i - 1) / 2;
+			std::size_t nextInd = suffixes[j].index + modifier;
+			suffixes[j].rank[1] = (nextInd < n)? suffixes[ind[nextInd]].rank[0]: -1;
 		}
 		
 		//sort suffixes according to first i characters
