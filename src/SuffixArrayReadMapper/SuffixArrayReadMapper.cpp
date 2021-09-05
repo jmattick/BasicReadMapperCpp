@@ -71,7 +71,7 @@ int SuffixArrayMapWorkflow(int argc, char* argv[])
 	
 
 	//output
-	ParseMappedReadsOut(refSeq, mappedReads, readFastas.size(), outPath);
+	ParseMappedReadsOut(refFasta, mappedReads, readFastas.size(), outPath);
 	std::cout << "\nOutput file: " << outPath << std::endl;
 	
 

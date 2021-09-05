@@ -27,3 +27,12 @@
 440	563	6525782522260324	src/BasicReadMapper.exe	2ca8afed4c31666
 1	376	6525784959292067	src/CMakeFiles/BasicReadMapper.dir/SuffixArrayReadMapper/ParseMappedReads.cpp.obj	18467ce22d4877fe
 377	497	6525784960292076	src/BasicReadMapper.exe	2ca8afed4c31666
+1	997	6525851994382640	src/CMakeFiles/BasicReadMapper.dir/SuffixArrayReadMapper/SuffixArrayReadMapper.cpp.obj	d8883c5abd31ce5
+6	998	6525851994382640	src/CMakeFiles/BasicReadMapper.dir/SuffixArrayReadMapper/ParseMappedReads.cpp.obj	18467ce22d4877fe
+999	1299	6525851996932202	src/BasicReadMapper.exe	2ca8afed4c31666
+0	694	6525853014584448	src/CMakeFiles/BasicReadMapper.dir/SuffixArrayReadMapper/ParseMappedReads.cpp.obj	18467ce22d4877fe
+695	895	6525853016264405	src/BasicReadMapper.exe	2ca8afed4c31666
+1	922	6525853927804945	src/CMakeFiles/BasicReadMapper.dir/SuffixArrayReadMapper/ParseMappedReads.cpp.obj	18467ce22d4877fe
+923	1173	6525853930054758	src/BasicReadMapper.exe	2ca8afed4c31666
+0	761	6525854525851540	src/CMakeFiles/BasicReadMapper.dir/SuffixArrayReadMapper/ParseMappedReads.cpp.obj	18467ce22d4877fe
+761	969	6525854527624170	src/BasicReadMapper.exe	2ca8afed4c31666
