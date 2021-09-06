@@ -16,7 +16,15 @@ int SuffixArrayMapWorkflow(int argc, char* argv[])
 {
 	// minimum argc is 4
 	if (argc < 4) {
-		std::cout << "Help text" << std::endl;
+		std::string helpTxt = 
+		"Usage:\n"
+		"BasicReadMapper <reference.fa> <reads.fa> <output.fa>\n"
+		"Arguments:\n"
+		"- <reference.fa> is the fasta file for the reference sequence that reads will be mapped to.\n"
+		"- <reads.fa> is the fasta file of the reads to be mapped to the reference sequence.\n"
+		"- <output.fa> is the output fasta file that will contain the mapped readsand reference sequence.\n";
+
+		std::cout << helpTxt << std::endl;
 		return 1;
 	}
 
