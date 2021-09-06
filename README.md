@@ -1,7 +1,7 @@
 # Basic Read Mapper
 
 This Basic Read Mapper will map reads to a reference sequence and output an aligned fasta file. 
-First, a suffix array is generated from the reference sequence. Next, the starting location of the reads
+First, a suffix array is generated from the reference sequence. Next, the starting locations of the reads
 are found by doing a binary search of the suffix array. Then, the reference sequence and reads are 
 output to a fasta file using "-" as a leading and trailing spacer for the mapped reads.
 
