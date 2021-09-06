@@ -6,3 +6,10 @@
 6	698	6525872270038797	src/CMakeFiles/BasicReadMapper.dir/main.cpp.obj	966b543690c43769
 13	705	6525872270118782	src/CMakeFiles/BasicReadMapper.dir/SuffixArrayReadMapper/SuffixArraySearch.cpp.obj	c33e8b10d8388c6b
 706	937	6525872272358764	src/BasicReadMapper.exe	2ca8afed4c31666
+0	643	6525892277261388	src/CMakeFiles/BasicReadMapper.dir/SuffixArrayReadMapper/SuffixArraySearch.cpp.obj	c33e8b10d8388c6b
+0	388	6525892363657665	src/CMakeFiles/BasicReadMapper.dir/SuffixArrayReadMapper/SuffixArraySearch.cpp.obj	c33e8b10d8388c6b
+389	519	6525892364747650	src/BasicReadMapper.exe	2ca8afed4c31666
+1	518	6525895152553507	src/CMakeFiles/BasicReadMapper.dir/SuffixArrayReadMapper/SuffixArraySearch.cpp.obj	c33e8b10d8388c6b
+519	651	6525895153653495	src/BasicReadMapper.exe	2ca8afed4c31666
+0	492	6525895416905245	src/CMakeFiles/BasicReadMapper.dir/SuffixArrayReadMapper/SuffixArraySearch.cpp.obj	c33e8b10d8388c6b
+493	616	6525895417935236	src/BasicReadMapper.exe	2ca8afed4c31666

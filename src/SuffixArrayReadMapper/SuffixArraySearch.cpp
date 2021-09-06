@@ -2,6 +2,7 @@
 
 MappedRead::MappedRead()
 {
+	loc = std::size_t();
 }
 
 MappedRead::MappedRead(Fasta f, std::size_t l)
