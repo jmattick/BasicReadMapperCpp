@@ -30,7 +30,7 @@ BasicReadMapper <reference.fa> <reads.fa> <output.fa>
 
 *Arguments*: 
 
-- `<reference.fa>` is the fasta file for thereference sequence that reads will be mapped to.
+- `<reference.fa>` is the fasta file for the reference sequence.
 
 - `<reads.fa>` is the fasta file of the reads to be mapped to the reference sequence.
 
